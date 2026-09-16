@@ -1,0 +1,418 @@
+.display-screen-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  background: #f5f8fb;
+  color: #172033;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.display-screen-embedded {
+  min-height: 0;
+  height: 100%;
+  border: 1px solid #d8e1ea;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.display-header {
+  background: #ffffff;
+  border-bottom: 2px solid #b7c6d4;
+  padding: 28px 32px 20px;
+}
+
+.display-header-inner {
+  max-width: 780px;
+  margin: 0 auto;
+  display: block;
+}
+
+.display-logo-frame {
+  width: 70px;
+  height: 70px;
+  flex: 0 0 70px;
+  justify-content: center;
+  display: flex;
+  padding: 5px;
+  place-items: center;
+  background: #f8fbfd;
+  border: 2px solid #aebdca;
+  border-radius: 4px;
+}
+
+.gov-logo {
+  width: 60px;
+  height: auto;
+  min-width: 80px;
+  object-fit: contain;
+}
+
+.header-title-group {
+  min-width: 0;
+  text-align: center;
+}
+
+.header-name-row {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 12px;
+}
+
+.display-header h1,
+.display-header h2 {
+  margin: 0;
+  line-height: 1.15;
+  color: #17324d;
+  letter-spacing: 0;
+}
+
+.display-header h1 {
+  flex: 1 1 auto;
+  padding: 8px 16px;
+  border: 2px solid #aebdca;
+  border-radius: 4px;
+  background: #ffffff;
+  font-size: clamp(23px, 2.7vw, 36px);
+  font-weight: 700;
+}
+
+.display-header h2 {
+  margin-top: 12px;
+  padding: 9px 18px;
+  border: 2px solid #aebdca;
+  border-radius: 4px;
+  display: inline-block;
+  background: #ffffff;
+  font-size: clamp(17px, 1.9vw, 25px);
+  font-weight: 700;
+}
+
+.display-main-content {
+  width: min(1080px, calc(100% - 48px));
+  flex: 1;
+  min-height: 0;
+  margin: 0 auto;
+  padding: 34px 0 30px;
+  display: grid;
+  grid-template-rows: minmax(260px, 1fr) auto;
+  gap: 28px;
+  border: 2px solid #9fb0bf;
+  border-top: 0;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.display-screen-embedded .display-header {
+  padding: 18px 24px 14px;
+}
+
+.display-screen-embedded .display-logo-frame {
+  width: 58px;
+  height: 58px;
+  flex-basis: 58px;
+}
+
+.display-screen-embedded .gov-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.display-screen-embedded .display-header h1 {
+  padding: 7px 14px;
+  font-size: clamp(21px, 2.2vw, 30px);
+}
+
+.display-screen-embedded .display-header h2 {
+  margin-top: 8px;
+  padding: 7px 14px;
+  font-size: clamp(16px, 1.5vw, 21px);
+}
+
+.display-screen-embedded .display-main-content {
+  width: min(980px, calc(100% - 32px));
+  padding: 18px 0 18px;
+  grid-template-rows: auto auto;
+  gap: 18px;
+}
+
+.display-screen-embedded .current-patient-section {
+  min-height: 0;
+  padding: 8px 16px 0;
+}
+
+.display-screen-embedded .section-title-label {
+  margin-bottom: 10px;
+  font-size: clamp(21px, 2vw, 28px);
+}
+
+.display-screen-embedded .current-patient-card {
+  width: min(520px, 100%);
+  min-height: 174px;
+  gap: 12px;
+  padding: 22px 34px;
+}
+
+.display-screen-embedded .current-row {
+  grid-template-columns: 116px minmax(0, 1fr);
+  font-size: clamp(22px, 2.2vw, 31px);
+}
+
+.display-screen-embedded .current-token {
+  font-size: clamp(38px, 4vw, 58px);
+}
+
+.display-screen-embedded .queue-lobby-section {
+  padding: 0 16px 18px;
+}
+
+.display-screen-embedded .lobby-heading-title {
+  margin-bottom: 14px;
+  padding: 7px 14px;
+  font-size: clamp(17px, 1.5vw, 22px);
+}
+
+.display-screen-embedded .queue-lobby-grid {
+  gap: 16px;
+}
+
+.display-screen-embedded .lobby-card {
+  min-height: 124px;
+  gap: 9px;
+  padding: 15px 16px;
+}
+
+.display-screen-embedded .lobby-card h4 {
+  min-height: 24px;
+  font-size: clamp(17px, 1.5vw, 22px);
+}
+
+.display-screen-embedded .lobby-detail-row {
+  min-height: 23px;
+  font-size: clamp(15px, 1.25vw, 19px);
+}
+
+.display-screen-embedded .lobby-detail-row strong {
+  font-size: clamp(21px, 1.8vw, 28px);
+}
+
+.display-screen-embedded .status-badge {
+  padding: 5px 8px;
+  font-size: clamp(13px, 1vw, 16px);
+}
+
+.current-patient-section {
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 0;
+}
+
+.section-title-label,
+.lobby-heading-title {
+  margin: 0;
+  color: #28516f;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.section-title-label {
+  margin-bottom: 16px;
+  font-size: clamp(23px, 2.4vw, 34px);
+}
+
+.current-patient-card {
+  width: min(560px, 100%);
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 32px 42px;
+  background: #ffffff;
+  border: 2px solid #9fb0bf;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.current-row {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 14px;
+  font-size: clamp(25px, 2.8vw, 38px);
+  line-height: 1.1;
+}
+
+.current-field-label {
+  color: #496172;
+  font-weight: 700;
+}
+
+.current-token {
+  color: #0f6f78;
+  font-size: clamp(42px, 5vw, 70px);
+  line-height: 0.95;
+}
+
+.queue-lobby-section {
+  padding: 0 20px 24px;
+}
+
+.lobby-heading-title {
+  width: fit-content;
+  margin: 0 auto 20px;
+  padding: 8px 16px;
+  border: 2px solid #aebdca;
+  border-radius: 4px;
+  background: #ffffff;
+  font-size: clamp(18px, 1.8vw, 24px);
+}
+
+.queue-lobby-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.lobby-card {
+  min-height: 164px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 14px;
+  padding: 20px 22px;
+  background: #ffffff;
+  border: 2px solid #9fb0bf;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.lobby-card h4 {
+  margin: 0 0 2px;
+  color: #263f57;
+  font-size: clamp(19px, 1.7vw, 26px);
+  font-weight: 800;
+  line-height: 1.1;
+  min-height: 30px;
+}
+
+.lobby-detail-row {
+  display: flex;
+  min-height: 28px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #435a70;
+  font-size: clamp(17px, 1.5vw, 23px);
+  line-height: 1.1;
+}
+
+.lobby-detail-row strong {
+  color: #102a43;
+  font-size: clamp(24px, 2.2vw, 34px);
+}
+
+.status-badge {
+  max-width: 100%;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: clamp(14px, 1.1vw, 18px);
+  font-weight: 800;
+  text-align: center;
+  white-space: normal;
+}
+
+.badge-next {
+  background-color: #d8f3dc;
+  color: #1f7a39;
+}
+
+.badge-preparing {
+  background-color: #fff0c2;
+  color: #8a5a00;
+}
+
+.badge-waiting {
+  background-color: #e8eef4;
+  color: #526273;
+}
+
+@media (max-width: 900px) {
+  .display-main-content {
+    width: min(100% - 28px, 680px);
+    padding: 28px 0;
+    gap: 26px;
+  }
+
+  .display-header {
+    padding: 18px 16px;
+  }
+
+  .display-header-inner {
+    max-width: 680px;
+  }
+
+  .display-logo-frame {
+    width: 62px;
+    height: 62px;
+    flex-basis: 62px;
+  }
+
+  .gov-logo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .current-patient-card {
+    padding: 28px 24px;
+  }
+
+  .current-row {
+    grid-template-columns: 112px minmax(0, 1fr);
+  }
+
+  .display-screen-container:not(.display-screen-embedded) .queue-lobby-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .queue-lobby-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .display-screen-container {
+    overflow: auto;
+  }
+
+  .display-header-inner {
+    max-width: 100%;
+  }
+
+  .header-name-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .display-header h2 {
+    width: 100%;
+    padding: 9px 12px;
+  }
+
+  .current-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .lobby-detail-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,224 @@
+.register-doctor-panel.form-card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 1098px;
+  width: 100%;
+  text-align: left;
+}
+
+.register-doctor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #102345;
+  padding: 15px 30px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+.register-doctor-header h2 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+
+.register-doctor-panel .form-section {
+  border: 1px solid #e8ecf5;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fafbfc;
+}
+
+.register-doctor-panel .form-section legend {
+  color: #102345;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0 10px;
+}
+
+.register-doctor-panel .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px 20px;
+  margin-top: 10px;
+}
+
+.register-doctor-panel .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.register-doctor-panel .form-group.full-width {
+  grid-column: span 2;
+}
+
+.register-doctor-panel .form-group label {
+  color: #55607d;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.register-doctor-panel .form-group input,
+.register-doctor-panel .form-group select {
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px 12px;
+  outline: none;
+  background-color: #ffffff;
+  color: #102345;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.register-doctor-panel .form-group input:focus,
+.register-doctor-panel .form-group select:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.1);
+}
+
+.register-doctor-panel .form-group input[readOnly] {
+  background-color: #f1f5f9;
+  color: #64748b;
+  cursor: not-allowed;
+  border-color: #e2e8f0;
+}
+
+.availability-register-section {
+  background-color: #f8fafc;
+}
+
+.register-radio-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.register-radio-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #102345;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 16px;
+  transition: all 0.2s;
+}
+
+.register-radio-option:hover {
+  background-color: #f8fafc;
+  border-color: #1a73e8;
+}
+
+.register-radio-option input {
+  width: 16px;
+  height: 16px;
+  accent-color: #1a73e8;
+  margin: 0;
+}
+
+.password-toggle {
+  background: none;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 9px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.password-toggle:hover {
+  background-color: #f1f5f9;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.btn-submit, .btn-cancel {
+  border: none;
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.btn-submit {
+  background-color: #1a73e8;
+  color: #ffffff;
+}
+
+.btn-submit:hover {
+  background-color: #1557b0;
+}
+
+.btn-cancel {
+  background-color: #1a73e8;
+  color: #ffffff;
+}
+
+.btn-cancel:hover {
+  background-color: #1557b0;
+}
+
+.btn-submit:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.form-success-message,
+.form-error-message {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: pre-line;
+}
+
+.form-success-message {
+  color: #15803d;
+}
+
+.form-error-message {
+  color: #b42318;
+}
+
+@media (max-width: 768px) {
+  .register-doctor-panel .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .register-doctor-panel .form-group.full-width {
+    grid-column: span 1;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .btn-submit, .btn-cancel {
+    width: 100%;
+  }
+}

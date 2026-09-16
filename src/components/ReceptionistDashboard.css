@@ -1,0 +1,227 @@
+.active-doctor-panel {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(16, 35, 69, 0.08);
+  color: #102345;
+  font-size: 18px;
+  padding: 20px 24px;
+}
+
+.register-doctor-panel .form-card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+  width: 100%;
+  text-align: left;
+}
+
+.register-doctor-panel {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+  width: 100%;
+  text-align: left;
+}
+.table-container {
+  border: 1px solid #e8ecf5;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.queue-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.queue-table th {
+  background: #f6f8fc;
+  color: #55607d;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e8ecf5;
+}
+
+.queue-table td {
+  color: #4f5f7f;
+  padding: 16px;
+  border-bottom: 1px solid #e8ecf5;
+}
+
+.empty-table {
+  color: #7a8495;
+  padding: 34px 16px !important;
+  text-align: center;
+}
+
+.register-doctor-panel .form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 22px;
+  margin-left: 1px;
+  margin-right: 1px;
+  padding: 15px 40px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto 22px auto;
+}
+
+.register-doctor-panel .form-header h2 {
+  color: #102345;
+  font-size: 25px;
+  color: #ffffff;
+  font-size: 1.3rem;
+  
+}
+
+.register-doctor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #102345;
+  padding: 8px 10px;
+  margin: -32px -10px 10px -10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+  border-radius: 8px 8px 0 0;
+}
+
+.register-doctor-header h2 {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.register-doctor-panel .registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.register-doctor-panel .form-section {
+  border: 1px solid #e8ecf5;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #fafbfc;
+}
+
+.register-doctor-panel .form-section legend {
+  color: #102345;
+  font-weight: 700;
+  padding: 0 8px;
+}
+
+.register-doctor-panel .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
+  margin-top: 5px;
+
+}
+
+.register-doctor-panel .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.register-doctor-panel .form-group.full-width {
+  grid-column: span 2;
+}
+
+.register-doctor-panel .form-group label {
+  color: #55607d;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.register-doctor-panel .form-group input,
+.register-doctor-panel .form-group select {
+  border: 1px solid #d7deeb;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.register-doctor-panel .form-group input:focus,
+.register-doctor-panel .form-group select:focus {
+  border-color: #1a73e8;
+}
+
+.availability-register-section {
+  background-color: #fbfcfe;
+}
+
+.register-radio-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.register-radio-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #d7deeb;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333333;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 14px;
+}
+
+.register-radio-option input {
+  width: 16px;
+  height: 16px;
+  accent-color: #1a73e8;
+}
+
+.register-doctor-panel .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.btn-submit,
+.btn-cancel {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 22px;
+}
+
+.btn-submit {
+  background: #0066cc;
+  color: #ffffff;
+}
+
+
+.btn-cancel {
+  background: #0066cc;
+  color: #ffffff;
+}
+
+@media (max-width: 760px) {
+  .register-doctor-panel .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .register-doctor-panel .form-group.full-width {
+    grid-column: span 1;
+  }
+
+  .register-doctor-panel .form-actions {
+    flex-direction: column;
+  }
+}

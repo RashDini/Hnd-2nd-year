@@ -1,0 +1,102 @@
+.manage-resets-panel {
+  width: min(100%, 1000px);
+  padding: 10px;
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(16, 35, 69, 0.06);
+  text-align: left;
+}
+
+.reset-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin: -32px -10px 10px -10px;
+  padding: 8px 10px;
+  border-radius: 8px 8px 0 0;
+  background: #102345;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.reset-header h2 {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.reset-header .exit-btn {
+  min-width: 74px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #777777;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.reset-card {
+  width: 100%;
+  overflow-x: auto;
+  padding: 24px;
+  border-radius: 0 0 8px 8px;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.reset-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.reset-table th,
+.reset-table td {
+  padding: 12px;
+  border: 1px solid #dce3ee;
+  text-align: left;
+}
+
+.reset-table th {
+  background: #f8f9fa;
+  color: #263449;
+  font-weight: 700;
+}
+
+.reset-status {
+  display: inline-flex;
+  min-width: 82px;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: #fff4d8;
+  color: #8a5a00;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.btn-reset-action {
+  border: none;
+  border-radius: 4px;
+  background: #0066cc;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 14px;
+}
+
+.alert-badge-counter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  border-radius: 999px;
+  background: #dd3333;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}

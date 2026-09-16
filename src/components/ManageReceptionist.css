@@ -1,0 +1,269 @@
+:root {
+  --primary-dark: #112240;
+  --secondary-dark: #1d3557;
+  --bg-light: #f4f6f9;
+  --card-bg: #ffffff;
+  --text-dark: #333333;
+  --border-color: #e0e0e0;
+  --btn-blue: #0066cc;
+  --btn-red: #d93025;
+  --btn-gray: #0066cc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.manage-receptionist-panel {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 1200px;
+  width: min(100%, 1200px);
+  text-align: left;
+}
+
+
+.manage-receptionist-panel .form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #102345;
+  padding: 5px 10px;
+  margin: -32px -10px 10px -10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+  border-radius: 8px 8px 0 0;
+}
+.manage-receptionist-panel .form-header h2 {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+
+
+.manage-receptionist-panel .content-card {
+  background-color: var(--card-bg);
+  padding: 24px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.manage-receptionist-panel .edit-profile-section h3 {
+  font-size: 16px;
+  color: var(--btn-blue);
+  margin-bottom: 16px;
+}
+
+.manage-receptionist-panel .search-container {
+  margin-bottom: 5px;
+}
+
+.manage-receptionist-panel .search-input-wrapper {
+  position: relative;
+  width: 30%;
+}
+
+.manage-receptionist-panel .search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7a8495;
+  font-size: 20px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.manage-receptionist-panel .show-password-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+  color: var(--text-dark);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.manage-receptionist-panel .show-password-option input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--btn-blue);
+  cursor: pointer;
+}
+
+.manage-receptionist-panel .search-input {
+  width: 100%;
+  padding: 10px 14px 10px 42px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.manage-receptionist-panel .table-responsive {
+  overflow-x: auto;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.manage-receptionist-panel .receptionist-table {
+  width: 100%;
+  min-width: 1120px;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.manage-receptionist-panel .receptionist-table th,
+.manage-receptionist-panel .receptionist-table td {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  text-align: left;
+  vertical-align: top;
+}
+
+.manage-receptionist-panel .receptionist-table th {
+  background-color: #f8f9fa;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.manage-receptionist-panel .action-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.manage-receptionist-panel .btn-update,
+.manage-receptionist-panel .btn-delete {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  color: white;
+  font-weight: 500;
+}
+
+.manage-receptionist-panel .btn-update {
+  background-color: var(--btn-blue);
+}
+
+.manage-receptionist-panel .btn-update:hover {
+  opacity: 0.9;
+}
+
+.manage-receptionist-panel .btn-delete {
+  background-color: var(--btn-red);
+}
+
+.manage-receptionist-panel .btn-delete:hover {
+  background-color: #b3241c;
+}
+
+.manage-receptionist-panel .section-divider {
+  border: 0;
+  height: 1px;
+  background: var(--border-color);
+  margin: 24px 0;
+}
+
+.manage-receptionist-panel .grid-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.manage-receptionist-panel .form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.manage-receptionist-panel .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.manage-receptionist-panel .form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.manage-receptionist-panel .form-group input {
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+.manage-receptionist-panel .form-group input:focus {
+  border-color: var(--btn-blue);
+}
+
+.manage-receptionist-panel .form-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.manage-receptionist-panel .form-actions button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  min-width: 100px;
+  font-weight: 500;
+}
+
+.manage-receptionist-panel .btn-update {
+  background-color: #0066cc;
+}
+
+.manage-receptionist-panel .btn-update:hover {
+  opacity: 0.9;
+}
+
+.manage-receptionist-panel .btn-clear {
+  background-color: #0066cc;
+  color: #ffffff !important;
+}
+
+.manage-receptionist-panel .btn-clear:hover {
+  opacity: 0.9;
+}
+
+.manage-receptionist-panel .btn-cancel {
+  background-color: var(--btn-gray);
+}
+
+.manage-receptionist-panel .btn-cancel:hover {
+  opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .manage-receptionist-panel {
+    width: 100%;
+  }
+
+  .manage-receptionist-panel .content-card {
+    padding: 16px;
+  }
+
+  .manage-receptionist-panel .grid-form {
+    grid-template-columns: 1fr;
+  }
+  .manage-receptionist-panel .form-actions {
+    grid-column: span 1 !important;
+    flex-direction: column;
+  }
+}

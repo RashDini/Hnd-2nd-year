@@ -1,0 +1,154 @@
+.form-card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+  width: 100%;
+  text-align: left;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #102345;
+  padding: 8px 10px;
+  margin: -32px -10px 10px -10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+  border-radius: 8px 8px 0 0;
+}
+
+.form-header h2 {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+
+
+.admin-form,
+.reception-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-section {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #fafbfc;
+}
+
+.form-section legend {
+  font-weight: 600;
+  color: #0066cc;
+  padding: 0 1px;
+  font-size: 1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.form-group input,
+.form-group select {
+  padding: 5px 5px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.show-password-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #333333;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.show-password-option input {
+  width: 16px;
+  height: 16px;
+  accent-color: #0066cc;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.btn-submit {
+  background-color: #0066cc;
+  color: #ffffff;
+  border: none;
+  padding: 10px 12px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-cancel {
+  background-color: #0066cc;
+  color: #ffffff;
+  border: none;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-submit:hover, .btn-cancel:hover {
+  opacity: 0.9;
+}
+
+.form-success-message,
+.form-error-message {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.form-success-message {
+  color: #15803d;
+}
+
+.form-error-message {
+  color: #b42318;
+}

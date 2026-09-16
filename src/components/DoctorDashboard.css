@@ -1,0 +1,239 @@
+:root {
+  --doctor-navy: #102345;
+  --doctor-blue: #0066cc;
+  --doctor-border: #dce3ee;
+  --doctor-muted: #64748b;
+  --doctor-text: #263449;
+}
+
+.doctor-patient-panel {
+  width: min(100%, 1180px);
+  max-width: 1180px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(16, 35, 69, 0.06);
+  text-align: left;
+}
+
+.doctor-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin: -32px -10px 10px -10px;
+  padding: 8px 10px;
+  border-radius: 8px 8px 0 0;
+  background: var(--doctor-navy);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-panel-header h2 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.doctor-panel-header p,
+.doctor-panel-header span {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.doctor-content-card {
+  display: grid;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 0 0 8px 8px;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.doctor-current-patient-section,
+.assigned-patients-section {
+  padding: 16px;
+  border: 1px solid var(--doctor-border);
+  border-radius: 6px;
+  background: #fbfcfe;
+}
+
+.section-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.section-title-row h3 {
+  color: var(--doctor-blue);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.section-title-row span {
+  color: var(--doctor-muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.doctor-date-label {
+  padding: 7px 12px;
+  border: 1px solid var(--doctor-border);
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.current-patient-layout {
+  display: grid;
+  grid-template-columns: 1fr 210px;
+  gap: 22px;
+  align-items: start;
+}
+
+.current-patient-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.current-patient-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--doctor-text);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.current-patient-fields input,
+.current-patient-fields textarea,
+.doctor-toolbar input {
+  width: 100%;
+  padding: 9px 11px;
+  border: 1px solid var(--doctor-border);
+  border-radius: 4px;
+  background: #ffffff;
+  color: #334155;
+  font-size: 14px;
+  outline: none;
+}
+
+.current-patient-fields textarea {
+  min-height: 78px;
+  resize: vertical;
+}
+
+.doctor-touch-actions {
+  display: grid;
+  gap: 12px;
+}
+
+.btn-call-next,
+.btn-complete,
+.btn-absent,
+.btn-touch {
+  min-height: 46px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  touch-action: manipulation;
+}
+
+.btn-call-next,
+.btn-touch {
+  background: var(--doctor-blue);
+}
+
+.btn-complete {
+  background: #15803d;
+}
+
+.btn-absent {
+  background: #b42318;
+}
+
+.btn-complete:disabled,
+.btn-absent:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.doctor-toolbar {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.doctor-toolbar input {
+  max-width: 520px;
+}
+
+.doctor-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.doctor-patient-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  background: #ffffff;
+  font-size: 14px;
+}
+
+.doctor-patient-table th,
+.doctor-patient-table td {
+  padding: 11px;
+  border: 1px solid var(--doctor-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.doctor-patient-table th {
+  background: #f8f9fa;
+  color: var(--doctor-text);
+  font-weight: 700;
+}
+
+.empty-doctor-table {
+  padding: 22px;
+  text-align: center;
+  color: var(--doctor-muted);
+}
+
+@media (max-width: 900px) {
+  .current-patient-layout,
+  .current-patient-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .doctor-toolbar input {
+    max-width: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .doctor-patient-panel {
+    width: 100%;
+  }
+
+  .doctor-content-card {
+    padding: 16px;
+  }
+
+  .doctor-panel-header,
+  .section-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
